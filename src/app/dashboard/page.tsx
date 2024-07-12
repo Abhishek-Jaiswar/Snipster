@@ -1,10 +1,8 @@
-import { ReactNode } from "react";
-import DashboardLayout from "./layout";
 
-const Dashboard = ({children} : {children : ReactNode}) => {
+const Dashboard = () => {
     return (
         <div>
-            {/* {children} */}
+            <h1>This is main page</h1>
         </div>
     );
 };
