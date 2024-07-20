@@ -2,17 +2,15 @@
 import Link from "next/link"
 import {
     BarChartBig,
-    Bell,
     CalendarClock,
+    CodeXml,
     FileQuestion,
     LayoutDashboard,
     LibraryBig,
     MessageSquareCode,
     MonitorDot,
-    MoonIcon,
     Notebook,
     NotebookText,
-    Package,
 } from "lucide-react"
 
 import { Badge } from "@/components/ui/badge"
@@ -35,8 +33,8 @@ const Sidebar = () => {
             <div className="flex h-full max-h-screen flex-col gap-2">
                 <div className="flex h-14 justify-between items-center border-b px-4 lg:h-[60px] lg:px-6">
                     <Link href="/" className="flex items-center gap-2 font-semibold">
-                        <Package className="h-6 w-6" />
-                        <span className="text-2xl font-bold">Mock</span>
+                        <CodeXml className="h-7 w-7" />
+                        <span className="text-2xl font-bold">Snipster</span>
                     </Link>
                     <div>
                         <Themes />
