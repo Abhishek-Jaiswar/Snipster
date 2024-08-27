@@ -29,9 +29,9 @@ const Sidebar = () => {
     const pathname = usePathname()
 
     return (
-        <div className="hidden border-r bg-muted/40 md:block">
+        <div className="hidden bg-muted/40 md:block">
             <div className="flex h-full max-h-screen flex-col gap-2">
-                <div className="flex h-14 justify-between items-center border-b px-4 lg:h-[60px] lg:px-6">
+                <div className="flex h-14 justify-between items-center  px-4 lg:h-[60px] lg:px-6">
                     <Link href="/" className="flex items-center gap-2 font-semibold">
                         <CodeXml className="h-7 w-7" />
                         <span className="text-2xl font-bold">Snipster</span>
@@ -42,45 +42,45 @@ const Sidebar = () => {
                 </div>
                 <div className="flex-1">
                     <nav className="grid items-start px-2 gap-2 text-sm font-medium lg:px-4">
-                        <Link href="/dashboard/overview" className={` ${pathname === '/dashboard/overview' ? "bg-muted text-primary" : ""} flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground `}>
+                        <Link href="/dashboard" className={` ${pathname === '/dashboard' ? "bg-primary text-white text-primary" : ""} flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground `}>
                             <LayoutDashboard className="h-4 w-4" />
-                            Overview
+                            Dashboard
                         </Link>
 
-                        <Link href="/dashboard/my-interviews" className={` ${pathname === '/dashboard/my-interviews' ? "bg-muted text-primary" : ""} flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground `}>
+                        <Link href="/dashboard/my-snippets" className={` ${pathname === '/dashboard/my-snippets' ? "bg-primary text-white text-primary" : ""} flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground `}>
                             <Notebook className="h-4 w-4" />
-                            My Interviews
-                            <Badge className="ml-auto flex h-6 w-6 shrink-0 items-center justify-center rounded-full">6</Badge>
+                            Snippets
+                            <Badge className="ml-auto text-xs flex shrink-0 items-center justify-center rounded-full">6 New</Badge>
                         </Link>
 
-                        <Link href="/dashboard/schedule-interviews" className={` ${pathname === '/dashboard/schedule-interviews' ? "bg-muted text-primary" : ""} flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground `}>
+                        <Link href="/dashboard/schedule-interviews" className={` ${pathname === '/dashboard/schedule-interviews' ? "bg-primary text-white text-primary" : ""} flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground `}>
                             <CalendarClock className="h-4 w-4" />
                             Schedule Interviews
                         </Link>
 
-                        <Link href="/dashboard/start-interview" className={` ${pathname === '/dashboard/start-interview' ? "bg-muted text-primary" : ""} flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground `}>
+                        <Link href="/dashboard/create-snips" className={` ${pathname === '/dashboard/create-snips' ? "bg-primary text-white text-primary" : ""} flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground `}>
                             <MonitorDot className="h-4 w-4" />
-                            Start Interview
+                            Create Snippets
                         </Link>
 
-                        <Link href="/dashboard/manage-questions" className={` ${pathname === '/dashboard/manage-questions' ? "bg-muted text-primary" : ""} flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground `}>
+                        <Link href="/dashboard/manage-questions" className={` ${pathname === '/dashboard/manage-questions' ? "bg-primary text-white text-primary" : ""} flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground `}>
                             <FileQuestion className="h-4 w-4" />
                             Manage Questions
                         </Link>
 
-                        <Link href="/dashboard/resources" className={` ${pathname === '/dashboard/resources' ? "bg-muted text-primary" : ""} flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground `}>
+                        <Link href="/dashboard/resources" className={` ${pathname === '/dashboard/resources' ? "bg-primary text-white text-primary" : ""} flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground `}>
                             <LibraryBig className="h-4 w-4" />
                             Resources
                         </Link>
-                        <Link href="/dashboard/analytics" className={` ${pathname === '/dashboard/analytics' ? "bg-muted text-primary" : ""} flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground `}>
+                        <Link href="/dashboard/analytics" className={` ${pathname === '/dashboard/analytics' ? "bg-primary text-white text-primary" : ""} flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground `}>
                             <BarChartBig className="h-4 w-4" />
                             Analytics
                         </Link>
-                        <Link href="/dashboard/notes" className={` ${pathname === '/dashboard/notes' ? "bg-muted text-primary" : ""} flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground `}>
+                        <Link href="/dashboard/notes" className={` ${pathname === '/dashboard/notes' ? "bg-primary text-white text-primary" : ""} flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground `}>
                             <NotebookText className="h-4 w-4" />
                             Notes
                         </Link>
-                        <Link href="/dashboard/feedback" className={` ${pathname === '/dashboard/feedback' ? "bg-muted text-primary" : ""} flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground `}>
+                        <Link href="/dashboard/feedback" className={` ${pathname === '/dashboard/feedback' ? "bg-primary text-white text-primary" : ""} flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground `}>
                             <MessageSquareCode className="h-4 w-4" />
                             Feedback
                         </Link>

@@ -32,7 +32,7 @@ import { Themes } from "../dashboard/_components/Themes"
 const Header = () => {
     const pathname = usePathname()
     return (
-        <header className="flex h-14 sticky top-0 left-0 items-center gap-4 border-b px-4 lg:h-[60px] lg:px-6">
+        <header className="flex h-14 sticky z-50 top-0 left-0 items-center gap-4 border-b px-4 lg:h-[60px] lg:px-6">
             <Sheet>
                 <SheetTrigger asChild>
                     <span className="md:hidden">
@@ -103,8 +103,18 @@ const Header = () => {
                         </Link>
                     </div>
                 </div>
-                <div className="">
-                    <Themes />
+                <div className="flex items-center justify-center gap-5">
+                    <div>
+                        <Themes />
+                    </div>
+                    <div className="flex items-center justify-center gap-5">
+                        <Link href={'/dashboard'}>
+                            <button className="dark:bg-primary bg-gray-800 text-white dark:text-black px-2 py-1 rounded-md hover:bg-gray-50">Login</button>
+                        </Link>
+                        <Link href={'/sign-up'}>
+                            <button className="dark:bg-primary bg-gray-800 text-white dark:text-black px-2 py-1 rounded-md hover:bg-gray-50">Sign Up</button>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </header>

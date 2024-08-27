@@ -3,12 +3,10 @@
 import Link from "next/link"
 import {
     CodeXml,
-    Home,
     LayoutDashboard,
     LineChart,
     Menu,
     Package,
-    Package2,
     ShoppingCart,
     Users,
 } from "lucide-react"
@@ -32,7 +30,7 @@ import { usePathname } from "next/navigation"
 const Header = () => {
     const pathname = usePathname()
     return (
-        <header className="flex h-14 items-center gap-4 border-b bg-muted/40 px-4 lg:h-[60px] lg:px-6">
+        <header className="flex h-14 items-center gap-4 bg-muted/40 px-4 lg:h-[60px] lg:pr-6 lg:pl-0">
             <Sheet>
                 <SheetTrigger asChild>
                     <Button variant="outline" size="icon" className="shrink-0 md:hidden">
@@ -44,11 +42,11 @@ const Header = () => {
                     <nav className="grid gap-2 text-lg font-medium">
                         <div className="flex items-center justify-between text-lg font-semibold mb-5">
                             <div className="flex items-center justify-center gap-2">
-                            <CodeXml className="h-6 w-6" />
-                            <h1 className=" font-bold">Snipster</h1>
+                                <CodeXml className="h-6 w-6" />
+                                <h1 className=" font-bold">Snipster</h1>
                             </div>
                             <div className=" mr-8">
-                            <Themes />
+                                <Themes />
                             </div>
                         </div>
                         <Link href="/dashboard/overview" className={` ${pathname === '/dashboard/overview' ? "bg-muted text-white" : ""} mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2  hover:text-foreground text-muted-foreground `}>
