@@ -10,7 +10,7 @@ import MySnippets from './my-snippets/page';
 
 
 
-const Overview = () => {
+const page = () => {
   const [isDropDownOpen, setDropDownOpen] = useState(false);
 
   const handleDropDown = () => {
@@ -82,4 +82,4 @@ const Overview = () => {
   )
 }
 
-export default Overview
+export default page
