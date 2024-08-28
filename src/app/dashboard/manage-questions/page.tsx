@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ManageQuestions = () => {
+const page = () => {
   return (
     <div>This is manage Question Page</div>
   )
 }
 
-export default ManageQuestions
+export default page

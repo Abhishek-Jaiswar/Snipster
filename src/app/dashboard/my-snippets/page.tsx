@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MySnippets = () => {
+const page = () => {
   return (
     <div>
       <div className='p-3'>
@@ -16,4 +16,4 @@ const MySnippets = () => {
   )
 }
 
-export default MySnippets
+export default page
