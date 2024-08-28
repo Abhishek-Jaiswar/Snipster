@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button';
 import { FaPlus } from "react-icons/fa6";
 import MySnippets from './my-snippets/page';
 
-const Page = () => {
+const page = () => {
   const [isDropDownOpen, setDropDownOpen] = useState(false);
 
   const handleDropDown = () => {
@@ -84,4 +84,4 @@ const Page = () => {
   )
 }
 
-export default Page;
+export default page;
