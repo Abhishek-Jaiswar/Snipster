@@ -5,7 +5,7 @@ import React from 'react'
 const Navbar = () => {
     return (
         <div>
-            <Link href="/sign-in">
+            <Link href="/dashboard">
                 <Button className=''>Login</Button>
             </Link>
         </div>

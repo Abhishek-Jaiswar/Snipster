@@ -1,7 +1,6 @@
 "use client"
 
 import { Input } from '@/components/ui/input'
-import { UserButton } from '@clerk/nextjs'
 import { Search } from 'lucide-react'
 import React from 'react'
 
@@ -15,7 +14,6 @@ const NavContent = () => {
                 </div>
             </form>
             <div className='flex items-center justify-center'>
-                <UserButton />
             </div>
         </div>
     )

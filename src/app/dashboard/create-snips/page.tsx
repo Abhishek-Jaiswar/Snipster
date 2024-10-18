@@ -1,8 +1,9 @@
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { ScrollArea } from "@/components/ui/scroll-area"
 import { Textarea } from "@/components/ui/textarea";
 import React from 'react'
+// import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+// import { dark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { IoDocumentTextOutline } from "react-icons/io5";
 import {
   Select,
