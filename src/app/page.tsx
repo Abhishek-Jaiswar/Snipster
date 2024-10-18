@@ -1,10 +1,9 @@
+import Navbar from '@/homeComponents/Navbar'
 import React from 'react'
-
-import Navbar from '../app/_homeComponents/Navbar'
 
 const page = () => {
   return (
-    <div>
+    <div className='h-screen flex items-center justify-center'>
       <Navbar />
     </div>
   )
